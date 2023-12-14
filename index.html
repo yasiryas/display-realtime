@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Input Text</title>
+     <script>
+          function saveText(){
+               var fillText = document.getElementById("txt").value;
+               localStorage.setItem("textvalue", fillText);
+               return false;
+          }
+     </script>
+     <link rel="stylesheet" href="style.css"></link>
+</head>
+<body>
+     <h1 for="text">Input di sini:</h3><br>
+     <textarea id="txt" onkeyup="saveText()"  rows="4" cols="50"></textarea><br>
+     <a href="display.html" target="_blank" class="btn">Tampilkan Display</a>
+</body>
+</html>

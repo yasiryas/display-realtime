@@ -1,0 +1,26 @@
+html * {
+     font-family: Nunito, sans-serif;
+}
+
+.btn {
+     background-color: #6F61C0;
+     color: #FFFFFF ;
+     padding: 8px 15px;
+     margin: 8px 0px;
+     border-radius: 5px;
+     text-decoration: none;
+}
+
+.btn:hover {
+     background-color: #4d4489;
+}
+
+body {
+     text-align: center;
+     padding: 20px;
+     background-color: #EDE4FF;
+}
+
+textarea {
+     margin: 10px 0px;
+}

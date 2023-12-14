@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Display</title>
+</head>
+<body onload= "JavaScript:refreshPage(1500);">
+<!-- <body onload= "refrashData();"> -->
+     <h1 id="displayText"></h1>
+     <script>
+          document.getElementById("displayText").innerHTML=localStorage.getItem("textvalue");
+
+          function refreshPage(t){
+               setTimeout("location.reload(true);", t);
+          }
+
+          function refrashData(){
+               var tempData = localStorage.getItem("textvalue");
+               tempData.addEventlistener("change", function(){
+                    alert('okkay');
+               });
+          }
+     </script>
+</body>
+</html>
